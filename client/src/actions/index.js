@@ -5,7 +5,7 @@ export function getMovies(){
         var json = await axios.get("http://localhost:3001/",{
 
         });
-        console.log("AAAAAAAAAAAAAAAAAA", json)
+       
         return dispatch({
             type: "GET_MOVIES",
             payload: json.data
